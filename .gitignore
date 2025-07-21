@@ -1,0 +1,104 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables and config
+.env
+.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code & IDE specific
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+pytest_cache/
+.cache/
+
+# Logs and local reports
+*.log
+logs/
+*.out
+*.err
+
+# Notebook conversion
+*.nbconvert.*
+
+# Project-specific data folders
+data/raw/*.csv
+data/raw/*.gz
+data/external/airbnb_images.zip
+data/interim/
+data/processed/
+data/temp/
+data/cache/
+
+# Model checkpoints and outputs
+models/
+checkpoints/
+*.ckpt
+*.h5
+*.pt
+*.pth
+*.onnx
+*.joblib
+*.pkl
+*.sav
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# File used for profiling
+.prof
+
+# Coverage reports
+coverage/

@@ -1,0 +1,52 @@
+name: ml-airbnb-price-predictor
+channels:
+  - conda-forge
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Core dependencies
+# ──────────────────────────────────────────────────────────────────────────────
+dependencies:
+  - python=3.10
+  - pip
+
+  # Data wrangling & numerical
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+
+  # Visualisation
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # Geospatial features
+  - geopandas
+  - shapely
+  - pyproj
+
+  # Deep‑learning stack (CPU by default; swap to pytorch::pytorch for GPU)
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # Gradient‑boosted trees
+  - xgboost
+  - lightgbm
+
+  # NLP / embeddings
+  - sentence-transformers
+  - nltk
+
+  # Jupyter interface
+  - jupyterlab
+  - ipykernel
+
+  # Extras installed via pip (latest versions by default)
+  - pip:
+      - mlflow
+      - wandb
+      - pillow
+      # Dev tooling
+      - black==24.3.0
+      - pre-commit

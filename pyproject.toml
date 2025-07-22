@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml_airbnb_price_predictor"
+version = "0.1.0"
+description = "Predict prices of Airbnb listings using multimodal machine learning"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Abdul Halim", email = "abdul.halim.mathematik@gmail.com" }
+]
+license = { text = "MIT" }
+
+# I would like to extend my sincere gratitude to my friends, Dimitri and Thanos.
+# ---------------------------------------------------------------------------
+# Runtime dependencies (mirrored in environment.yml where relevant)
+# ---------------------------------------------------------------------------
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "seaborn",
+  "plotly",
+  "geopandas",
+  "shapely",
+  "pyproj",
+  "torch",
+  "torchvision",
+  "torchaudio",
+  "xgboost",
+  "lightgbm",
+  "sentence-transformers",
+  "mlflow",
+  "wandb",
+  "pillow"
+]
+
+[project.optional-dependencies]
+# Development / CI helpers
+dev = [
+  "black",
+  "pytest",
+  "pre-commit"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+  "tests"
+]
